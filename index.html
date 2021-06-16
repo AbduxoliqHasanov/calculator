@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+<div class="container">
+    <form name="display">
+        <table>
+            <tr>
+                <td colspan="4"><input id="result" type="text" name="text" placeholder="Abduxoliq" disabled></td>
+            </tr>
+            <tr>
+            <td><input class="id" type="button" value="1" name="one" onclick="display.text.value+='1'"></td>
+            <td><input type="button" value="2" name="two" onclick="display.text.value+='2'"></td>
+            <td><input type="button" value="3" name="there" onclick="display.text.value+='3'"></td>
+            <td><input type="button" value="+" name="plus" onclick="display.text.value+='+'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" value="4" name="foo" onclick="display.text.value+='4'"></td>
+            <td><input type="button" value="5" name="five" onclick="display.text.value+='5'"></td>
+            <td><input type="button" value="6" name="sex" onclick="display.text.value+='6'"></td>
+            <td><input type="button" value="-" name="minus" onclick="display.text.value+='-'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" value="7" name="seven" onclick="display.text.value+='7'"></td>
+            <td><input type="button" value="8" name="eight" onclick="display.text.value+='8'"></td>
+            <td><input type="button" value="9" name="nine" onclick="display.text.value+='9'"></td>
+            <td><input type="button" value="x" name="kupaytirish" onclick="display.text.value+='*'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" value="/" name="bulish" onclick="display.text.value+='/'"></td>
+            <td><input type="button" value="c" name="clear" onclick="display.text.value=''"></td>
+            <td><input type="button" value="0" name="null" onclick="display.text.value+='0'"></td>
+            <td><input type="button" value="=" name="result" onclick="display.text.value=eval(display.text.value)"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
